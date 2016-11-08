@@ -13,44 +13,33 @@
     tools:context="poderfeminino.com.br.kelcoachadm.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:orientation="vertical" >
-
-        <!-- Capture picture button -->
-
-        <Button
-            android:id="@+id/btnCapturePicture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:background="@color/btn_bg"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="@string/btnTakePicture"
-            android:textColor="@color/white" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center_horizontal"
-            android:text="@string/or"
-            android:textColor="@color/txt_font" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:layout_weight="30"
+            android:text="Título"
+            android:layout_leftTo=""/>
 
-        <!-- Record video button -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:text="Data atual"/>
 
-        <Button
-            android:id="@+id/btnRecordVideo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/btn_bg"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="@string/btnRecordVideo"
-            android:textColor="@color/white" />
-    </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="30dp"
+        android:text="Título" />
 </RelativeLayout>
